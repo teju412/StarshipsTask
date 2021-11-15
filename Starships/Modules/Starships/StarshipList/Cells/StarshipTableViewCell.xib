@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarshipTableViewCell" rowHeight="110" id="KGk-i7-Jjw" customClass="StarshipTableViewCell" customModule="Starships" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Destroyer" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsP-CJ-ej5">
+                        <rect key="frame" x="20" y="30" width="132" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imperial I-class Star Destroyer" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Up-wd-D1C">
+                        <rect key="frame" x="20" y="68" width="183.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Kuat Drive Yards" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5A-QQ-cOQ">
+                        <rect key="frame" x="260.5" y="33.5" width="93.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <color key="highlightedColor" systemColor="labelColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-cM-MLN">
+                        <rect key="frame" x="330" y="64" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Prl-8g-1EB"/>
+                            <constraint firstAttribute="height" constant="24" id="rjW-Pk-Pho"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Up-wd-D1C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5xd-Mh-TaT"/>
+                    <constraint firstItem="zQM-cM-MLN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="99j-Zl-pYg"/>
+                    <constraint firstItem="bsP-CJ-ej5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ETW-6O-5IB"/>
+                    <constraint firstItem="bsP-CJ-ej5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="Iil-fn-jui"/>
+                    <constraint firstItem="zQM-cM-MLN" firstAttribute="centerY" secondItem="6Up-wd-D1C" secondAttribute="centerY" id="X7t-ka-vcQ"/>
+                    <constraint firstItem="z5A-QQ-cOQ" firstAttribute="bottom" secondItem="bsP-CJ-ej5" secondAttribute="bottom" constant="-5" id="cXI-8g-PgF"/>
+                    <constraint firstItem="6Up-wd-D1C" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bsP-CJ-ej5" secondAttribute="bottom" constant="10" id="h5e-w9-rnh"/>
+                    <constraint firstItem="z5A-QQ-cOQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bsP-CJ-ej5" secondAttribute="trailing" constant="20" id="l4e-Lj-mif"/>
+                    <constraint firstAttribute="trailing" secondItem="z5A-QQ-cOQ" secondAttribute="trailing" constant="20" id="lnT-Og-B8q"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6Up-wd-D1C" secondAttribute="bottom" constant="15" id="tzh-11-Xjv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favStar" destination="zQM-cM-MLN" id="4Wa-kj-enM"/>
+                <outlet property="manufacturer" destination="z5A-QQ-cOQ" id="1lv-IB-4KX"/>
+                <outlet property="modelName" destination="6Up-wd-D1C" id="WnK-lG-MPl"/>
+                <outlet property="starshipName" destination="bsP-CJ-ej5" id="yEB-QA-kSF"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
