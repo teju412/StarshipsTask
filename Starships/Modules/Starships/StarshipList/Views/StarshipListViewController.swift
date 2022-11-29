@@ -39,6 +39,7 @@ class StarshipListViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        print("Tej created one line")
         super.viewDidLoad()
         self.loadData()
         viewModel.starshipList.bind { _ in
